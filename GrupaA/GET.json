@@ -1,0 +1,29 @@
+{
+  "projectId": 201,
+  "objective": "Stabilization and environmental protection",
+  "startDate": "2022-01-01",
+  "endDate": null,
+  "artifact": {
+    "name": "Rosetta Stone",
+    "originDate": "1799-07-15",
+    "institution": {
+      "institutionId": 1,
+      "name": "Museum of Ancient History",
+      "foundedYear": 1880
+    }
+  },
+  "staffAssignments": [
+    {
+      "firstName": "Alice",
+      "lastName": "Green",
+      "hireDate": "2015-04-01",
+      "role": "Project Lead"
+    },
+    {
+      "firstName": "Mohammed",
+      "lastName": "Rahman",
+      "hireDate": "2018-07-15",
+      "role": "Material Analyst"
+    }
+  ]
+}

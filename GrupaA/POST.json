@@ -1,0 +1,12 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone",
+    "originDate": "1799-07-15",
+    "institutionId": 1
+  },
+  "project": {
+    "objective": "Stabilization and environmental protection",
+    "startDate": "2022-01-01",
+    "endDate": null
+  }
+}
