@@ -10,6 +10,7 @@ builder.Services.AddOpenApi();
 
 
 builder.Services.AddScoped<IProjectService, ProjectService>();
+builder.Services.AddScoped<IArtifactService, ArtifactService>();
 
 var app = builder.Build();
 

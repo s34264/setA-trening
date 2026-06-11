@@ -1,4 +1,6 @@
-﻿using GrupaA.Exceptions;
+﻿using GrupaA.DTOs;
+using GrupaA.Exceptions;
+using GrupaA.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GrupaA.Controllers;
@@ -9,15 +11,16 @@ public class ArtifactsController(IArtifactService service) : ControllerBase
 {
 
     [HttpPost]
-    public async Task<IActionResult> AddArtifact([FromBody] int CreateArtifactDto)
+    public async Task<IActionResult> AddArtifact([FromBody] CreateProjectWithArtifactDto dto)
     {
         try
         {
-            return Ok(await service.GetProjectByIdAsync(id));
+            await service.AddArtifactWithProjectAsync(dto);
+            return Created();
         }
-        catch (NotFoundExcpetion e)
+        catch (Exception  e)
         {
-            return NotFound(e.Message);
+            return BadRequest(e.Message);
         }
     }
     

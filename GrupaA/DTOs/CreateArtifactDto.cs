@@ -7,7 +7,7 @@ public class CreateArtifactDto
     [Required]
     public string Name { get; set; } = String.Empty;
     [Required]
-    public DateTime OriginDarte { get; set; }
+    public DateTime OriginDate { get; set; }
     [Required]
     public int InstitutionId { get; set; }
 }
